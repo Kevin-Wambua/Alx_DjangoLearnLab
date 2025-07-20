@@ -1,0 +1,3 @@
+# LibraryProject Django Setup
+django
+

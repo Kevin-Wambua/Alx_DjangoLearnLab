@@ -1,6 +1,12 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import user_passes_test
 from .models import UserProfile
+from django.urls import path
+from .views import admin_view
+
+urlpatterns = [
+    path('admin/', admin_view, name='admin_view'),
+]
 
 # Utility function to check if user is Admin
 def is_admin(user):
